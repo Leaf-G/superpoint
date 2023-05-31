@@ -1,5 +1,5 @@
 data:
-    dataset: 'Coco'  # 'coco' 'hpatches'
+    dataset: 'coco'  # 'coco' 'hpatches'
     export_folder: 'train' # train, val
     preprocessing:
         resize: [240, 320] 
@@ -32,7 +32,8 @@ training:
 
 model:
     # name: 'SuperPointNet' # 'SuperPointNet_gauss2'
-    name: 'SuperPointNet_gauss2' # 'SuperPointNet_gauss2'
+#    name: 'SuperPointNet_gauss2' # 'SuperPointNet_gauss2'
+    name: 'SuperPointOptimized'
     params: {
     }    
     batch_size: 1
@@ -44,6 +45,6 @@ model:
         enable: true
 
 # pretrained: 'logs/magicpoint_synth20/checkpoints/superPointNet_200000_checkpoint.pth.tar' # 'SuperPointNet'
-pretrained: 'logs/magicpoint_synth_t2/checkpoints/superPointNet_100000_checkpoint.pth.tar'
+#pretrained: 'logs/magicpoint_synth_t2/checkpoints/superPointNet_100000_checkpoint.pth.tar'
 
 

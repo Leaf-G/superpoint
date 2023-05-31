@@ -334,6 +334,7 @@ class SyntheticDataset_gaussian(data.Dataset):
             """
             augmentation = self.ImgAugTransform(**self.config["augmentation"])
             img = img[:, :, np.newaxis]
+            # img = np.repeat(img, 3, axis=2)
             img = augmentation(img)
             cusAug = self.customizedTransform()
             img = cusAug(img, **self.config["augmentation"])

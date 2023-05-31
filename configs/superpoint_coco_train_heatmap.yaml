@@ -57,7 +57,8 @@ training:
 model:
     # name: 'magic_point'
     # name: 'SuperPointNet_heatmap'
-    name: 'SuperPointNet_gauss2'
+#    name: 'SuperPointNet_gauss2'
+    name: 'SuperPointOptimized'
     params: {
     }
     detector_loss:
